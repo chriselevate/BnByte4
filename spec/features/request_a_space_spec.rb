@@ -4,7 +4,7 @@ feature "Click on space to see it's page"  do
       password: 'foobar', password_confirmation: 'foobar')
   end
 
-	scenario 'user clicks on space to see further details' do
+	xscenario 'user clicks on space to see further details' do
     sign_up
     sign_in
     expect { create_space }.to change(Space, :count).by(1)
